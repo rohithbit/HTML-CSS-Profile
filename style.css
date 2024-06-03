@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+.outc{
+    width: 100%;
+    border:grey;
+    max-width:370px;
+    background-color: white;
+    box-shadow: 4px 4px 30px rgb(128, 128, 128);
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    position: relative;
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+
+}
+.media-buttons{
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    
+}
+.inc{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    border-radius: 50%;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 3px;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover ;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.link{
+    color: white;
+    margin-right: 20px;
+    height: 34px;
+    width: 34px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.link:hover{
+    opacity: 0.3;
+}
+body{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+.bt1{
+    background-color: blue;
+    border-radius: 24px;
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+.bt1:hover{
+    opacity: 0.3;
+    box-shadow: 2px 2px 10px grey;
+}
+
+.bt{
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    
+}
+.ala{
+    display: flex;
+}
+.like{
+    align-items: center;
+    color: gray;
+    display: flex;
+    margin-right: 5px;
+    padding: 15px;
+    border-right: 1px solid gray;
+
+}
+.like:last-child{
+    border-right: none;
+
+}
+.outc::before{
+    height: 30%;
+    width: 100%;
+    background-color: aqua;
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    border-radius: 22px 22px 0 0;
+    /*border radius  first 22 is top left then top right then bottom left and bottom right*/
+}
